@@ -1,0 +1,12 @@
+<h1>Papers</h1>
+<h3>submitted:</h3>
+<ul>
+<%- @submitted.each do |row|%>
+   <li> <%= row%><br> </li>
+<%- end%>
+</ul>
+<br>
+<h3>Not submitted:</h3>
+<%- @not_submitted.each do |row|%>
+    <%= row%><br>
+<%- end%>
