@@ -11,6 +11,18 @@ ActiveAdmin.register Submission do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+#filter :paper_id, :as =>
 permit_params [:paper_id, :user_id]
 
 end
+
+
+# form do |f|
+#     f.semantic_errors *f.object.errors.keys
+#     f.inputs "Submission" do
+#       f.input :user_id
+#       f.input :paper_id, :as => :check_boxes
+#       #Zpermit_params [:paper_id, :user_id]
+#     end
+#     f.actions
+# end
