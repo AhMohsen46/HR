@@ -12,6 +12,8 @@
 <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
 <h1>Papers</h1>
 <h3>submitted:</h3>
+
+
 <ul>
 <%- @submitted.each do |row|%>
    <li> <%= row%><br> </li>

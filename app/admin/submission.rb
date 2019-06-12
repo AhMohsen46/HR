@@ -14,6 +14,16 @@ ActiveAdmin.register Submission do
 #filter :paper_id, :as =>
 permit_params [:paper_id, :user_id]
 
+# form do |f|
+#     f.inputs "Submissions" do
+#         f.input :user_id, as: :drop_list
+#         f.input :paper_id, as: :check_boxes
+      
+#       other fields...
+#     end
+#     f.actions
+#   end
+
 end
 
 
